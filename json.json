@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1325,
+		"name": "Skinny Bar Necklace",
+		"price": "61.95"
+	},
+	{
+		"id": 1329,
+		"name": "Skinny Bar Bracelet",
+		"price": "94.95"
+	},
+	{
+		"id": 1330,
+		"name": "Classic Name Necklace",
+		"price": "49.95"
+	},
+	{
+		"id": 1335,
+		"name": "Dainty Bar Necklace",
+		"price": "39.95"
+	},
+	{
+		"id": 1336,
+		"name": "Roman Numeral Ring &amp; Bar Necklace Set",
+		"price": "99.95"
+	},
+	{
+		"id": 1337,
+		"name": "Initial Earring &amp; Sideways Initial Necklace Set",
+		"price": "84.95"
+	},
+	{
+		"id": 1340,
+		"name": "Heart Bracelet &amp; Earring Set",
+		"price": "119.95"
+	},
+	{
+		"id": 1341,
+		"name": "Monogram Necklace &amp; Earring Set",
+		"price": "179.95"
+	},
+	{
+		"id": 1342,
+		"name": "Infinity Jewelry Set",
+		"price": "125.95"
+	},
+	{
+		"id": 1343,
+		"name": "Ring With Hands And Heart",
+		"price": "119.95"
+	}
+]
