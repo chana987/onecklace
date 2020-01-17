@@ -1,21 +1,36 @@
 class DataManager {
     constructor() {
         this.products = []
+        this.currentProduct = ''
     }
 
-    async fetchProducts() {
-        let products = await $.get('http://127.0.0.1:3000/products')
-        for (let product of products[0]) {
+    async getProducts() {
+        let products = await $.get('http://localhost:3000/products')
+        for (let product of products) {
             product.img = `https://cdn.onecklace.com/products/${product.id}/product_${product.id}_1_730.jpeg`
+            product.imgGold = `https://cdn.onecklace.com/products/${product.id}/gold_plated_product_${product.id}_1_730.jpeg`
         }
-        this.products = products[0]
+        this.products = products
+        return this.products
     } 
 
-    getProducts() {
-        return this.products
+    setCurrentProduct(id) {
+        this.currentProduct = this.products.find(p => p.id === id)
+        this.currentProduct.material = 'silver'
     }
 
-    saveItem(item) {
-        
+    getCurrentProduct() {
+        return this.currentProduct
+    }
+
+    changeMaterial(material) {
+        this.currentProduct.material = material
+    }
+
+    async saveItem(name) {
+        this.currentProduct.name = name
+        await $.post('http://localhost:3000/product', this.currentProduct, function(res) {
+            console.log(res)
+        })
     }
 }
